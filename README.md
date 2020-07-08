@@ -1,5 +1,5 @@
 ################################################################################################################################################################
-								@Spring Boot application.properties
+								@Spring Boot application.yml
 
 This repository consists the code to demo for the following task:
 
