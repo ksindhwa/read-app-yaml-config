@@ -5,12 +5,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:/config/myapp/myapp.properties")
-@PropertySource("classpath:/config/system/sysapp.properties")
+@PropertySource(value="classpath:/config/myapp/myapp.yml", factory = YamlPropertySourceFactory.class)
+@PropertySource(value="classpath:/config/system/sysapp.yml", factory = YamlPropertySourceFactory.class)
 public class ConfigClass {
 
 	
-	//myapp.properties config values
+
+	
 	@Value("${myapp.url}")
 	private String myAppUrl;
 	
@@ -80,6 +81,7 @@ public class ConfigClass {
 	public void setMyAppPassword(String myAppPassword) {
 		this.myAppPassword = myAppPassword;
 	}
+
 
 	
 }

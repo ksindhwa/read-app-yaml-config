@@ -1,0 +1,4 @@
+sysapp:
+ url: https://www.google.com
+ username: googlemaster
+ password: masterpassword
